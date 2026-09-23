@@ -1,34 +1,16 @@
-# Zippy Adventure Multiplayer
+# Zippy World — Ultimate
 
-## Estrutura
-- index.html
-- style.css
-- game.js
-- server.js
-- package.json
+Open-world multiplayer game made with Three.js + Socket.IO.
 
-## Testar no PC
-1. Instale Node.js 18+.
-2. Abra o terminal nesta pasta.
-3. Rode:
-   npm install
-4. Depois:
-   npm start
-5. Abra `http://localhost:3000` somente para testar o servidor; o jogo deve ser servido por um servidor HTTP, por exemplo Live Server.
-6. No `game.js`, para testar localmente, o endereço padrão do Socket.IO já é `http://localhost:3000`.
+## Local
+```bash
+npm install
+npm start
+```
+Open http://localhost:3000 in two browser tabs.
 
-## Publicar
-O GitHub Pages hospeda o front-end, mas NÃO o `server.js`.
-Você precisa publicar o servidor Node em um serviço que aceite WebSockets.
-Depois, no começo de `game.js`, você pode definir:
-window.MULTIPLAYER_SERVER_URL = "https://SEU-SERVIDOR.example";
-antes da linha `const socket = io(...)`.
+## Render
+Build: `npm install`
+Start: `npm start`
 
-## Recursos
-- criar sala com código de 6 caracteres
-- entrar por código
-- até 8 jogadores
-- jogadores visíveis
-- sincronização de posição em tempo real
-- nomes acima dos jogadores
-- cores diferentes
+For GitHub Pages + Render, change `SERVER_URL` in `game.js` to your Render URL. For local play, leave it as `http://localhost:3000`.

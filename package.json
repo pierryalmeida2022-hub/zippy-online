@@ -1,16 +1,1 @@
-{
-  "name": "zippy-multiplayer-server",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Servidor multiplayer do Zippy Adventure",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "socket.io": "^4.8.1"
-  },
-  "engines": {
-    "node": ">=18"
-  }
-}
+{"name":"zippy-world-ultimate","version":"3.0.0","private":true,"scripts":{"start":"node server.js"},"dependencies":{"socket.io":"^4.8.1"}}
