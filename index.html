@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zippy Adventure Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <div class="panel">
+      <h1>ZIPPY <span>ONLINE</span></h1>
+      <p>Crie uma sala ou entre na sala de um amigo.</p>
+
+      <label for="playerName">Seu nome</label>
+      <input id="playerName" maxlength="16" placeholder="ZippyPlayer">
+
+      <div class="row">
+        <button id="createBtn">CRIAR SALA</button>
+        <button id="joinBtn" class="secondary">ENTRAR</button>
+      </div>
+
+      <label for="roomCode">Código da sala</label>
+      <input id="roomCode" maxlength="8" placeholder="Ex.: ABC123" autocomplete="off">
+
+      <div id="status">Conectando ao servidor...</div>
+      <div class="help">
+        <b>Controles</b><br>
+        W/A/S/D ou setas · mover<br>
+        Espaço · pular · Shift · boost · Q · spin · E · dash
+      </div>
+    </div>
+  </div>
+
+  <div id="hud">
+    <div class="pill">Sala: <b id="roomLabel">---</b></div>
+    <div class="pill">Jogadores: <b id="playerCount">1</b></div>
+    <button id="copyRoomBtn" class="small">COPIAR CÓDIGO</button>
+  </div>
+
+  <div id="message"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.8.1/dist/socket.io.min.js"></script>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

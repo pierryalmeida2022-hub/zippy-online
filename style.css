@@ -1,0 +1,21 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;font-family:Arial,sans-serif;background:#071018}
+canvas{display:block}
+#menu{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#193c54,#05080d 70%);color:#fff}
+.panel{width:min(92vw,460px);padding:30px;border:1px solid #ffffff25;border-radius:22px;background:#071018dd;box-shadow:0 20px 70px #0008}
+h1{font-size:46px;letter-spacing:4px;margin-bottom:6px}
+h1 span{color:#4cc9ff}
+.panel p{color:#b7c6d3;margin-bottom:22px}
+label{display:block;font-size:13px;color:#b7c6d3;margin:12px 0 6px}
+input{width:100%;padding:13px 14px;border:1px solid #ffffff20;border-radius:11px;background:#0e1822;color:#fff;outline:none;font-size:16px}
+input:focus{border-color:#4cc9ff}
+.row{display:flex;gap:10px;margin-top:16px}
+button{border:0;border-radius:11px;padding:13px 16px;background:#1599e8;color:#fff;font-weight:800;cursor:pointer;flex:1}
+button:hover{filter:brightness(1.12)}
+button.secondary{background:#263543}
+button.small{flex:0;padding:8px 11px;font-size:11px}
+#status{min-height:22px;margin-top:15px;color:#7ee2ff;font-size:13px}
+.help{margin-top:18px;padding-top:15px;border-top:1px solid #ffffff14;color:#9fb0bf;line-height:1.6;font-size:13px}
+#hud{display:none;position:fixed;z-index:10;top:15px;left:15px;right:15px;gap:8px;align-items:center;pointer-events:none}
+.pill,#copyRoomBtn{pointer-events:auto;background:#071018cc;border:1px solid #ffffff1d;color:#fff;border-radius:10px;padding:9px 12px}
+#message{position:fixed;z-index:12;left:50%;bottom:35px;transform:translateX(-50%);color:#fff;font-size:22px;font-weight:800;text-shadow:0 2px 6px #000;pointer-events:none}
