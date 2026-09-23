@@ -1,6 +1,6 @@
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js";
 
-const socket = io(window.MULTIPLAYER_SERVER_URL || "http://localhost:3000", {
+const socket = io("https://zippy-online.onrender.com", {
   transports: ["websocket", "polling"]
 });
 
